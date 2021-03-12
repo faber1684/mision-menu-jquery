@@ -5,6 +5,7 @@ $(document).ready(function(){
     });
     $('a').click(function (e){
        e.preventDefault();
+       //Aquí falta el if
        $(this).addClass('active');
        $(this).css('color', '#EA178C')
     });
