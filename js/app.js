@@ -5,7 +5,10 @@ $(document).ready(function(){
     });
     $('a').click(function (e){
        e.preventDefault();
-       //Aquí falta el if
+       if($('a').hasClass('active')){
+         $('a').removeClass('active');
+         $('a').css('color', '#000'); 
+       }
        $(this).addClass('active');
        $(this).css('color', '#EA178C')
     });
